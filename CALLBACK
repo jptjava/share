@@ -23,3 +23,11 @@ var result=doSomething(3,function(a){
 return a*3;
 });
 console.log(result);
+
+
+
+
+//Advance
+/*  Use the Call or Apply Function To Preserve this keyword effects
+Eg. callbackfunctionName.apply (callbackObj, [firstName, lastName]);
+*/

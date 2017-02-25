@@ -1,0 +1,25 @@
+/*
+Callback functions are function passed as parameter of another function and are run inside that another
+function during runtime. These callback function has accessed to the variable defined in that other function due to its closeure scope.
+*/
+
+
+
+function doSomething(x,callback){
+  return callback(x);
+}
+
+
+function addOne(x){
+ return x+1;
+}
+
+
+
+console.log(doSomething(1,addOne));   
+
+//using anonymouse
+var result=doSomething(3,function(a){
+return a*3;
+});
+console.log(result);
